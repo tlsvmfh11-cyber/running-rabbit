@@ -45,3 +45,6 @@ next-env.d.ts
 # misc
 *.zip
 *.code-workspace
+
+# Claude Code
+.claude/
