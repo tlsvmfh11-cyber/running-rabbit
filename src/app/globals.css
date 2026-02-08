@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@import "./styles.css";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+/* 블랙앤골드 럭셔리 테마 - Next.js */
+body {
+  /* background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important; */
+  color: #ffffff !important;
+}
+
+.text--henry,
+.text--neon,
+.text--title-2,
+.text--title-3,
+.text--subtitle-2,
+.text--subtitle-3,
+.text--section-label,
+h1, h2, h3, h4, h5, h6 {
+  color: #d4af37 !important;
+  font-weight: 700 !important;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3) !important;
+}
+
+.text--henry {
+  color: #d4af37 !important;
+  font-weight: 800 !important;
+  text-shadow: 0 0 30px rgba(212, 175, 55, 0.5) !important;
+}
+
+.button {
+  background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%) !important;
+  color: #000000 !important;
+  border: 2px solid #d4af37 !important;
+}
+
+.button div,
+.button span {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+.wrapper--business-card {
+  background-image: linear-gradient(135deg, #d4af37, #f4d03f) !important;
+  background-color: transparent !important;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Dark mode is now permanent - removed automatic theme switching */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 슬라이더 이미지 비율 맞춤 */
+.image--slider-image {
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 로고 배경 처리 */
+.image--logo {
+  background: transparent !important;
+  mix-blend-mode: multiply !important;
+  width: 25% !important;
+  height: auto !important;
+}
+
+/* 모바일 로고 크기 조정 (200%) */
+@media (max-width: 768px) {
+  .image--logo {
+    width: 50% !important; /* 25%에서 50%로 200% 확대 */
+  }
+}
+
+.image--logo-string,
+.image--logo--string {
+  background: transparent !important;
+  mix-blend-mode: multiply !important;
+  width: 100% !important;
+  height: auto !important;
+}

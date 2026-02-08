@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /_next/
+Allow: /_next/static/
+Allow: /static/
+Allow: /api/
+
+Sitemap: https://daltorunningrabbit.com/sitemap.xml
