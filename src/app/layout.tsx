@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     images: [
       {
-        url: "/images/간판1.jpg",
+        url: "/images/간판1.webp",
       },
     ],
   },
