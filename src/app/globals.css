@@ -63,6 +63,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* 링크 밑줄 제거 - 고급스러운 디자인 */
+a {
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+/* hover시에만 부드러운 밑줄 효과 */
+a:hover {
+  text-decoration: none !important;
+  opacity: 0.8;
+  text-shadow: 0 0 8px currentColor;
+}
+
 /* 슬라이더 이미지 비율 맞춤 */
 .image--slider-image {
   object-fit: cover !important;
@@ -82,6 +95,123 @@ body {
 @media (max-width: 768px) {
   .image--logo {
     width: 50% !important; /* 25%에서 50%로 200% 확대 */
+  }
+}
+
+/* 고급스러운 애니메이션 효과 */
+@keyframes shimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-20deg);
+  }
+}
+
+/* 모바일 하단 고정 버튼 스타일 */
+.mobile-call-button {
+  pointer-events: none;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.mobile-call-button a {
+  pointer-events: auto;
+}
+
+.mobile-gold-button {
+  background: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%);
+  background-size: 200% 100%;
+  box-shadow: 0 8px 32px rgba(212, 175, 55, 0.4), 0 0 0 1px rgba(212, 175, 55, 0.3) inset;
+  animation: shimmer 3s ease-in-out infinite;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  letter-spacing: -0.02em;
+}
+
+/* 모바일에서 하단 버튼을 위한 여백 확보 */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 100px;
+  }
+}
+
+/* 텍스트 링크 스타일 개선 */
+.text-white a,
+.text-gray-300 a,
+p a {
+  position: relative;
+  display: inline-block;
+}
+
+/* 링크에 부드러운 밑줄 효과 (optional - 필요시) */
+.text-white a::after,
+.text-gray-300 a::after,
+p a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+  opacity: 0.5;
+}
+
+.text-white a:hover::after,
+.text-gray-300 a:hover::after,
+p a:hover::after {
+  width: 100%;
+}
+
+/* 전화번호 링크 특별 스타일 */
+a[href^="tel:"] {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+
+a[href^="tel:"]:hover {
+  transform: translateY(-1px);
+  text-shadow: 0 0 15px currentColor;
+}
+
+/* 버튼 공통 스타일 개선 */
+.button,
+button,
+a[class*="button"] {
+  letter-spacing: -0.01em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 모바일 반응형 텍스트 최적화 */
+@media (max-width: 768px) {
+  h1 {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    line-height: 1.7;
   }
 }
 

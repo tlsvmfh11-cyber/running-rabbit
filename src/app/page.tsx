@@ -233,9 +233,9 @@ export default function HomePage() {
           <p className="text-base md:text-lg text-gray-400 mb-12 max-w-4xl leading-relaxed">
             강남역 10번 출구 도보 5분 거리에 위치한 <span className="font-bold" style={{ color: '#d4af37' }}>달리는토끼 런닝래빗</span>은
             10년 전통의 강남 대표 하이퍼블릭 가라오케입니다.
-            <a href="#price" className="hover:underline" style={{ color: '#d4af37', fontWeight: 'bold' }}>투명한 정찰제 가격</a>, 최상급 시설, 완벽한 프라이버시 보장으로
+            <a href="#price" className="transition-all duration-300" style={{ color: '#d4af37', fontWeight: 'bold' }}>투명한 정찰제 가격</a>, 최상급 시설, 완벽한 프라이버시 보장으로
             비즈니스 접대부터 친구 모임, 1인 방문까지 모든 상황에 완벽하게 대응합니다.
-            신대표가 24시간 직접 응대하며 <a href="#reviews" className="hover:underline" style={{ color: '#d4af37', fontWeight: 'bold' }}>고객 만족도 1위</a>를 기록하고 있습니다.
+            신대표가 24시간 직접 응대하며 <a href="#reviews" className="transition-all duration-300" style={{ color: '#d4af37', fontWeight: 'bold' }}>고객 만족도 1위</a>를 기록하고 있습니다.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -301,14 +301,14 @@ export default function HomePage() {
 
               <p className="text-lg md:text-xl leading-relaxed text-gray-400">
                 10년 이상의 경험을 보유한 전문 스태프들이 고객 한 분 한 분께 맞춤형 서비스를 제공하며,
-                <a href="#choice-system" className="hover:underline" style={{ color: '#d4af37', fontWeight: 'bold' }}>투명한 정찰제 가격 시스템</a>으로 숨은 비용 없이 안심하고 이용하실 수 있습니다.
+                <a href="#choice-system" className="transition-all duration-300" style={{ color: '#d4af37', fontWeight: 'bold' }}>투명한 정찰제 가격 시스템</a>으로 숨은 비용 없이 안심하고 이용하실 수 있습니다.
                 신대표가 직접 24시간 응대하며 예약부터 이용까지 모든 과정을 세심하게 관리합니다.
               </p>
 
               <p className="text-lg md:text-xl leading-relaxed text-gray-400">
-                최신 음향 시스템과 프리미엄 인테리어로 꾸며진 <a href="#rooms" className="hover:underline" style={{ color: '#d4af37', fontWeight: 'bold' }}>다양한 룸</a>을 갖추고 있으며,
-                2인 소규모 모임부터 <a href="#group" className="hover:underline" style={{ color: '#d4af37', fontWeight: 'bold' }}>20인 이상 대규모 단체</a>까지 완벽하게 대응 가능합니다.
-                주차 발렛 서비스와 <a href="#vip" className="hover:underline" style={{ color: '#d4af37', fontWeight: 'bold' }}>VIP 고객 전용 픽업 서비스</a>도 제공하여
+                최신 음향 시스템과 프리미엄 인테리어로 꾸며진 <a href="#rooms" className="transition-all duration-300" style={{ color: '#d4af37', fontWeight: 'bold' }}>다양한 룸</a>을 갖추고 있으며,
+                2인 소규모 모임부터 <a href="#group" className="transition-all duration-300" style={{ color: '#d4af37', fontWeight: 'bold' }}>20인 이상 대규모 단체</a>까지 완벽하게 대응 가능합니다.
+                주차 발렛 서비스와 <a href="#vip" className="transition-all duration-300" style={{ color: '#d4af37', fontWeight: 'bold' }}>VIP 고객 전용 픽업 서비스</a>도 제공하여
                 편안한 방문을 보장합니다.
               </p>
 
@@ -1405,7 +1405,7 @@ export default function HomePage() {
           <p className="text-center text-gray-400 mt-12 text-lg leading-relaxed">
             모든 가격은 <span className="font-bold text-white">정찰제</span>로 운영되며,
             예약 시 정확한 금액을 안내해드립니다.<br />
-            <a href="tel:010-2303-3778" className="font-bold hover:underline" style={{ color: '#d4af37' }}>
+            <a href="tel:010-2303-3778" className="font-bold transition-all duration-300" style={{ color: '#d4af37' }}>
               010-2303-3778
             </a>로 문의하시면 상세한 견적을 받아보실 수 있습니다.
           </p>
@@ -1540,7 +1540,7 @@ export default function HomePage() {
 
           <p className="text-center text-gray-400 mt-12 text-lg leading-relaxed">
             초이스 시스템에 대해 더 궁금하신 점이 있으시면<br />
-            <a href="tel:010-2303-3778" className="font-bold hover:underline" style={{ color: '#d4af37' }}>
+            <a href="tel:010-2303-3778" className="font-bold transition-all duration-300" style={{ color: '#d4af37' }}>
               010-2303-3778
             </a>로 문의해주세요. 신대표가 친절하게 안내해드립니다.
           </p>
@@ -1793,7 +1793,7 @@ export default function HomePage() {
 
           <p className="text-center text-gray-400 mt-12 text-lg leading-relaxed">
             더 자세한 이용 팁이 궁금하시다면<br />
-            <a href="tel:010-2303-3778" className="font-bold hover:underline" style={{ color: '#d4af37' }}>
+            <a href="tel:010-2303-3778" className="font-bold transition-all duration-300" style={{ color: '#d4af37' }}>
               010-2303-3778
             </a>로 문의해주세요!
           </p>
@@ -1946,7 +1946,7 @@ export default function HomePage() {
 
           <p className="text-center text-gray-400 mt-12 text-lg leading-relaxed">
             VIP 서비스 및 회원 가입 문의<br />
-            <a href="tel:010-2303-3778" className="font-bold hover:underline" style={{ color: '#d4af37' }}>
+            <a href="tel:010-2303-3778" className="font-bold transition-all duration-300" style={{ color: '#d4af37' }}>
               010-2303-3778
             </a> (신대표 직통)
           </p>
@@ -2075,7 +2075,7 @@ export default function HomePage() {
 
           <p className="text-center text-gray-400 mt-12 text-lg leading-relaxed">
             단체 예약 문의 및 상담<br />
-            <a href="tel:010-2303-3778" className="font-bold hover:underline" style={{ color: '#d4af37' }}>
+            <a href="tel:010-2303-3778" className="font-bold transition-all duration-300" style={{ color: '#d4af37' }}>
               010-2303-3778
             </a> (최소 3일 전 예약 권장)
           </p>
@@ -2566,26 +2566,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Mobile Fixed Call Button */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-[1000] p-4 bg-gradient-to-t from-black via-black/95 to-transparent pointer-events-none">
-        <a
-          href="tel:01023033778"
-          className="flex items-center justify-center gap-3 w-full h-14 rounded-full font-bold text-lg text-black transition-all duration-300 active:scale-95 pointer-events-auto shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:shadow-[0_0_40px_rgba(212,175,55,0.7)]"
-          style={{
-            background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)',
-            paddingBottom: 'calc(0.875rem + env(safe-area-inset-bottom))'
-          }}
-        >
-          <svg
-            className="w-6 h-6 animate-pulse"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+      {/* Mobile Fixed Call Button - 고급스러운 디자인 */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-[1000] mobile-call-button">
+        <div className="px-4 pb-4 pt-6 bg-gradient-to-t from-black via-black/98 to-transparent">
+          <a
+            href="tel:01023033778"
+            className="mobile-gold-button flex items-center justify-center gap-3 w-full h-16 rounded-2xl font-bold text-lg text-black transition-all duration-300 active:scale-[0.98] relative overflow-hidden group"
           >
-            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-          </svg>
-          <span>지금 바로 예약하기</span>
-        </a>
+            <svg
+              className="w-7 h-7 relative z-10"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+            </svg>
+            <span className="relative z-10">
+              지금 바로 예약하기
+            </span>
+          </a>
+
+          <p className="text-center text-xs mt-2 text-[#d4af37]/70 font-medium">
+            신대표와 직접 연결됩니다
+          </p>
+        </div>
       </div>
 
       {/* Footer */}
