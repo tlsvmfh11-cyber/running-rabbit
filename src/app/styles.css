@@ -185,23 +185,23 @@ th {
   font-family: webflow-icons !important;
 }
 .w-icon-slider-right:before {
-  content: "?�";
+  content: "";
 }
 .w-icon-slider-left:before {
-  content: "??;
+  content: "";
 }
 .w-icon-nav-menu:before {
-  content: "??;
+  content: "";
 }
 .w-icon-arrow-down:before,
 .w-icon-dropdown-toggle:before {
-  content: "??;
+  content: "";
 }
 .w-icon-file-upload-remove:before {
   content: "";
 }
 .w-icon-file-upload-icon:before {
-  content: "�?;
+  content: "";
 }
 * {
   box-sizing: border-box;
