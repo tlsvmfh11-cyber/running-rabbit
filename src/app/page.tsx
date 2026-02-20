@@ -230,7 +230,7 @@ export default function HomePage() {
             특별한 순간을 경험하세요
           </p>
 
-          <p className="text-base md:text-lg text-gray-400 mb-12 max-w-4xl leading-relaxed">
+          <p className="text-base md:text-lg text-gray-400 max-w-4xl leading-relaxed">
             강남역 10번 출구 도보 5분 거리에 위치한 <span className="font-bold" style={{ color: '#d4af37' }}>달리는토끼 런닝래빗</span>은
             10년 전통의 강남 대표 하이퍼블릭 가라오케입니다.
             <a href="#price" className="transition-all duration-300" style={{ color: '#d4af37', fontWeight: 'bold' }}>투명한 정찰제 가격</a>, 최상급 시설, 완벽한 프라이버시 보장으로
@@ -238,10 +238,11 @@ export default function HomePage() {
             신대표가 24시간 직접 응대하며 <a href="#reviews" className="transition-all duration-300" style={{ color: '#d4af37', fontWeight: 'bold' }}>고객 만족도 1위</a>를 기록하고 있습니다.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* CTA Button Group */}
+          <div className="mt-6 md:mt-10 flex flex-col items-center gap-4 md:gap-5">
             <a
               href="tel:010-2303-3778"
-              className="inline-block px-12 py-5 text-lg md:text-xl font-bold rounded-full transition-all duration-300 hover:scale-110 hover:shadow-[0_0_40px_rgba(212,175,55,0.6)]"
+              className="flex items-center justify-center px-12 py-5 text-lg md:text-xl font-bold rounded-full transition-all duration-300 hover:scale-110 hover:shadow-[0_0_40px_rgba(212,175,55,0.6)] w-full max-w-md"
               style={{
                 background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)',
                 color: '#000000',
@@ -252,7 +253,7 @@ export default function HomePage() {
             </a>
             <a
               href="#about"
-              className="inline-block px-12 py-5 text-lg md:text-xl font-bold rounded-full border-2 transition-all duration-300 hover:scale-110 text-white hover:bg-white/10"
+              className="flex items-center justify-center px-12 py-5 text-lg md:text-xl font-bold rounded-full border-2 transition-all duration-300 hover:scale-110 text-white hover:bg-white/10 w-full max-w-md"
               style={{
                 borderColor: '#d4af37',
               }}
@@ -2571,19 +2572,19 @@ export default function HomePage() {
         <div className="px-4 pb-4 pt-6 bg-gradient-to-t from-black via-black/98 to-transparent">
           <a
             href="tel:01023033778"
-            className="mobile-gold-button flex items-center justify-center gap-3 w-full h-16 rounded-2xl font-bold text-lg text-black transition-all duration-300 active:scale-[0.98] relative overflow-hidden group"
+            className="mobile-gold-button flex items-center justify-center w-full h-16 rounded-2xl font-bold text-lg text-black transition-all duration-300 active:scale-[0.98] relative overflow-hidden group"
           >
-            <svg
-              className="w-7 h-7 relative z-10"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-            </svg>
-            <span className="relative z-10">
-              지금 바로 예약하기
-            </span>
+            <div className="flex items-center justify-center gap-2.5 relative z-10">
+              <svg
+                className="w-6 h-6 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              <span className="whitespace-nowrap">지금 바로 예약하기</span>
+            </div>
           </a>
 
           <p className="text-center text-xs mt-2 text-[#d4af37]/70 font-medium">
