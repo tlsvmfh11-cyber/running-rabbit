@@ -2567,29 +2567,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Mobile Fixed Call Button - 고급스러운 디자인 */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-[1000] mobile-call-button">
-        <div className="px-4 pb-4 pt-6 bg-gradient-to-t from-black via-black/98 to-transparent">
+      {/* Mobile Fixed Call Button */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-[1000] pointer-events-none" style={{ paddingBottom: 'env(safe-area-inset-bottom, 12px)' }}>
+        <div className="px-5 pb-3 pt-8 bg-gradient-to-t from-black via-black/95 to-transparent pointer-events-auto">
           <a
             href="tel:01023033778"
-            className="mobile-gold-button flex items-center justify-center w-full h-16 rounded-2xl font-bold text-lg text-black transition-all duration-300 active:scale-[0.98] relative overflow-hidden group"
+            className="mobile-gold-button block w-full rounded-xl active:scale-[0.97]"
           >
-            <div className="flex items-center justify-center gap-2.5 relative z-10">
-              <svg
-                className="w-6 h-6 flex-shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+            <div className="flex items-center justify-center gap-3 h-14 px-6">
+              <svg className="w-5 h-5 text-black flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
-              <span className="whitespace-nowrap">지금 바로 예약하기</span>
+              <span className="text-black font-bold text-[15px] tracking-tight">전화 예약하기</span>
             </div>
           </a>
-
-          <p className="text-center text-xs mt-2 text-[#d4af37]/70 font-medium">
-            신대표와 직접 연결됩니다
-          </p>
         </div>
       </div>
 

@@ -118,36 +118,25 @@ a:hover {
 }
 
 /* 모바일 하단 고정 버튼 스타일 */
-.mobile-call-button {
-  pointer-events: none;
-  padding-bottom: env(safe-area-inset-bottom, 16px);
-}
-
-.mobile-call-button a {
-  pointer-events: auto;
-  -webkit-tap-highlight-color: transparent;
-  user-select: none;
-}
-
 .mobile-gold-button {
   background: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%);
   background-size: 200% 100%;
-  box-shadow: 0 8px 32px rgba(212, 175, 55, 0.4), 0 0 0 1px rgba(212, 175, 55, 0.3) inset;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35);
   animation: shimmer 3s ease-in-out infinite;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-  letter-spacing: -0.02em;
-  min-height: 64px;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
   touch-action: manipulation;
 }
 
 .mobile-gold-button:active {
-  filter: brightness(1.1) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  box-shadow: 0 2px 12px rgba(212, 175, 55, 0.25);
 }
 
 /* 모바일에서 하단 버튼을 위한 여백 확보 */
 @media (max-width: 768px) {
   body {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
 }
 
