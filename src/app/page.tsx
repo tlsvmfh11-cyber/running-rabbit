@@ -1,196 +1,12 @@
-'use client'
-
-import { useEffect, useState } from 'react'
-import Head from 'next/head'
-
 export default function HomePage() {
-  // Auto-update date
   const currentDate = new Date().toLocaleDateString('ko-KR', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
   })
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) return null
 
   return (
     <>
-      <Head>
-        {/* Primary Meta Tags */}
-        <title>강남 가라오케 완벽 가이드 - 달리는토끼 런닝래빗 10년 전통 프리미엄 하이퍼블릭</title>
-        <meta name="title" content="강남 가라오케 완벽 가이드 - 달리는토끼 런닝래빗 10년 전통" />
-        <meta name="description" content="강남역 10번 출구 도보 5분, 10년 전통의 프리미엄 하이퍼블릭 가라오케. 투명한 정찰제 가격, 1인 방문 가능, 최상급 시설과 완벽한 프라이버시 보장. 신대표 24시간 직접 응대, 고객 만족도 1위. 비즈니스 접대부터 친구 모임까지 모든 상황에 완벽 대응. 지금 바로 예약하세요!" />
-        <meta name="keywords" content="강남 가라오케, 달리는토끼, 런닝래빗, 하이퍼블릭, 강남역 가라오케, 1인 방문, 비즈니스 접대, 강남 유흥, 정찰제, 프리미엄 가라오케, 신대표, 초이스 시스템, VIP 룸, 단체 예약, 강남 핫플" />
-        <link rel="canonical" href="https://running-rabbit-gangnam.com" />
-        <meta name="robots" content="index, follow" />
-        <meta name="language" content="Korean" />
-        <meta name="author" content="달리는토끼 런닝래빗" />
-
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://running-rabbit-gangnam.com" />
-        <meta property="og:title" content="강남 가라오케 완벽 가이드 - 달리는토끼 런닝래빗 10년 전통" />
-        <meta property="og:description" content="강남역 10번 출구 도보 5분, 10년 전통 프리미엄 하이퍼블릭. 투명한 정찰제, 1인 방문 가능, 최상급 시설. 신대표 24시간 직접 응대." />
-        <meta property="og:image" content="https://running-rabbit-gangnam.com/images/title.webp" />
-        <meta property="og:site_name" content="달리는토끼 런닝래빗" />
-        <meta property="og:locale" content="ko_KR" />
-
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://running-rabbit-gangnam.com" />
-        <meta property="twitter:title" content="강남 가라오케 완벽 가이드 - 달리는토끼 런닝래빗" />
-        <meta property="twitter:description" content="강남역 도보 5분, 10년 전통 프리미엄 하이퍼블릭. 1인 방문 가능, 정찰제 가격, 24시간 응대" />
-        <meta property="twitter:image" content="https://running-rabbit-gangnam.com/images/title.webp" />
-
-        {/* Additional Meta */}
-        <meta name="geo.region" content="KR-11" />
-        <meta name="geo.placename" content="강남구, 서울" />
-        <meta name="geo.position" content="37.4979;127.0276" />
-
-        {/* Schema.org Structured Data - LocalBusiness */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "달리는토끼 런닝래빗",
-              "image": "https://running-rabbit-gangnam.com/images/logo2-removebg-preview.png",
-              "description": "강남역 10번 출구 도보 5분, 10년 전통의 프리미엄 하이퍼블릭 가라오케. 투명한 정찰제 가격, 최상급 시설, 완벽한 프라이버시 보장",
-              "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "KR",
-                "addressRegion": "서울특별시",
-                "addressLocality": "강남구",
-                "streetAddress": "강남역 10번 출구 도보 5분"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "37.4979",
-                "longitude": "127.0276"
-              },
-              "telephone": "+82-10-2303-3778",
-              "priceRange": "₩₩₩",
-              "openingHours": "Mo-Su 18:00-05:00",
-              "url": "https://running-rabbit-gangnam.com",
-              "paymentAccepted": ["Cash", "Credit Card"],
-              "currenciesAccepted": "KRW",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "reviewCount": "127",
-                "bestRating": "5",
-                "worstRating": "1"
-              }
-            })
-          }}
-        />
-
-        {/* Schema.org - FAQPage */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "예약은 어떻게 하나요?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "예약은 전화(010-2303-3778)로 가능합니다. 신대표가 24시간 직접 응대하며, 방문 날짜, 시간, 인원 수를 말씀해주시면 즉시 예약 확정됩니다. 당일 예약도 가능하지만 주말과 공휴일에는 미리 예약하시는 것을 권장합니다."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "1인 방문도 가능한가요?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "네, 1인 방문 환영합니다. 프라이빗한 1인 룸도 준비되어 있으며, 부담 없이 편안하게 이용하실 수 있습니다. 신대표가 직접 친절하게 안내해드립니다."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "초이스 시스템은 어떻게 되나요?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "입장 후 웨이팅룸에서 여러 명의 매니저가 소개되며, 고객이 직접 선택하는 시스템입니다. 부담 없이 마음에 드는 매니저를 선택하시면 됩니다."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "주차는 가능한가요?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "네, 전용 주차장이 완비되어 있습니다. 주차 공간이 부족할 경우 근처 제휴 주차장을 이용하실 수 있으며, 주차비는 일정 금액 이상 이용 시 지원됩니다."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "드레스 코드가 있나요?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "격식을 갖춘 복장이 권장되지만, 너무 캐주얼하지 않으면 됩니다. 반바지, 슬리퍼, 민소매는 피해주시고, 스마트 캐주얼 이상의 복장을 권장합니다."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "이용 요금은 얼마인가요?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "기본 2시간 기준, 2인 24만원부터 시작합니다. 인원과 시간에 따라 요금이 달라지며, 정찰제로 투명하게 운영됩니다. 상세한 가격은 전화 문의 시 안내해드립니다."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "결제 방법은 어떻게 되나요?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "현금 및 모든 카드 결제가 가능합니다. 법인카드도 사용 가능하며, 세금계산서 발행도 가능합니다."
-                  }
-                }
-              ]
-            })
-          }}
-        />
-
-        {/* Schema.org - BreadcrumbList */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "홈",
-                  "item": "https://running-rabbit-gangnam.com"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "강남 가라오케",
-                  "item": "https://running-rabbit-gangnam.com#about"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "name": "초이스 시스템",
-                  "item": "https://running-rabbit-gangnam.com#choice-system"
-                }
-              ]
-            })
-          }}
-        />
-      </Head>
 
       <main className="min-w-full bg-black text-white">
         {/* Update Date Display */}
@@ -200,13 +16,27 @@ export default function HomePage() {
           </p>
         </div>
 
+        {/* Desktop Navigation */}
+        <nav className="hidden md:block bg-black/80 backdrop-blur-sm border-b border-[#d4af37]/20 sticky top-0 z-50" aria-label="메인 네비게이션">
+          <div className="max-w-7xl mx-auto flex items-center justify-center gap-8 py-3 px-4">
+            <a href="#about" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">소개</a>
+            <a href="#price" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">가격</a>
+            <a href="#choice-system" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">초이스</a>
+            <a href="#reviews" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">후기</a>
+            <a href="#directions" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">오시는 길</a>
+            <a href="#contact" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">문의</a>
+          </div>
+        </nav>
+
         {/* Hero Section */}
-      <section className="relative py-32 md:py-48 px-4 overflow-hidden">
+      <header>
+      <section className="relative py-32 md:py-48 px-4 overflow-hidden" aria-label="메인 히어로">
         <div className="absolute inset-0">
           <img
             src="/images/title.webp"
-            alt="강남 런닝래빗 배경"
+            alt="강남 달토 런닝래빗 프리미엄 하이퍼블릭 가라오케 메인 이미지"
             className="w-full h-full object-cover"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-purple-950/70 via-black/80 to-black/90" />
         </div>
@@ -221,9 +51,9 @@ export default function HomePage() {
             강남 최고의 핫플레이스
           </h1>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-12 text-white">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-12 text-white">
             런닝래빗
-          </h1>
+          </h2>
 
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 max-w-4xl leading-relaxed">
             강남 최고급 하이퍼블릭 가라오케, 프리미엄 서비스와 럭셔리한 공간에서<br />
@@ -263,9 +93,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </header>
 
       {/* About Section */}
-      <section id="about" className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section id="about" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="강남 달토 소개">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-black to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-16 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -277,7 +108,7 @@ export default function HomePage() {
               <div className="relative overflow-hidden rounded-2xl border-2 border-[#d4af37]/30 hover:border-[#d4af37]/60 transition-all duration-500" style={{ aspectRatio: '4/3' }}>
                 <img
                   src="/images/logo2-removebg-preview.png"
-                  alt="강남 달리는토끼 로고"
+                  alt="강남 달토 달리는토끼 런닝래빗 공식 로고"
                   className="w-full h-full object-contain p-8 transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                   draggable={false}
@@ -374,7 +205,7 @@ export default function HomePage() {
       </section>
 
       {/* Henry Section */}
-      <section className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="신대표 소개">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-black to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -398,7 +229,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '4/3' }}>
                 <img
                   src="/images/img-01.webp"
-                  alt="럭셔리 인테리어"
+                  alt="강남 달토 럭셔리 프리미엄 인테리어"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                   draggable={false}
@@ -414,7 +245,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '4/3' }}>
                 <img
                   src="/images/img-02.webp"
-                  alt="완벽한 분위기"
+                  alt="강남 달토 특별한 분위기 연출"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                   draggable={false}
@@ -430,7 +261,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '4/3' }}>
                 <img
                   src="/images/룸5.webp"
-                  alt="최상급 서비스"
+                  alt="강남 달토 최상급 VIP 서비스"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                   draggable={false}
@@ -512,7 +343,7 @@ export default function HomePage() {
       </section>
 
       {/* 4-Card Section */}
-      <section className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="이용 상황별 안내">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-black to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h3 className="text-4xl md:text-5xl font-bold mb-16 text-center text-white">
@@ -526,7 +357,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '4/3' }}>
                 <img
                   src="/images/고객접대.webp"
-                  alt="비즈니스 미팅 및 회식"
+                  alt="강남 달토 비즈니스 미팅 및 회식 접대"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                   draggable={false}
@@ -544,7 +375,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '4/3' }}>
                 <img
                   src="/images/친구들과함께.webp"
-                  alt="친구 모임 및 동창회"
+                  alt="강남 달토 친구 모임 및 동창회"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                   draggable={false}
@@ -562,7 +393,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '4/3' }}>
                 <img
                   src="/images/해외게스트.webp"
-                  alt="특별한 기념일"
+                  alt="강남 달토 특별한 기념일 파티"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                   draggable={false}
@@ -580,7 +411,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '4/3' }}>
                 <img
                   src="/images/혼자방문하는손님.webp"
-                  alt="일상 스트레스 해소"
+                  alt="강남 달토 일상 스트레스 해소 힐링"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                   draggable={false}
@@ -597,7 +428,7 @@ export default function HomePage() {
       </section>
 
       {/* Rooms Section */}
-      <section className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section id="rooms" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="룸 소개">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-black to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-16 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -610,7 +441,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '16/9' }}>
                 <img
                   src="/images/계단1.webp"
-                  alt="입구 계단"
+                  alt="강남 달토 입구 계단 럭셔리 인테리어"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -638,7 +469,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '16/9' }}>
                 <img
                   src="/images/복도1.webp"
-                  alt="복도"
+                  alt="강남 달토 복도 고급 대리석 인테리어"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -665,7 +496,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '16/9' }}>
                 <img
                   src="/images/룸2.webp"
-                  alt="입구"
+                  alt="강남 달토 런닝래빗 입구 외관"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -694,7 +525,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '16/9' }}>
                 <img
                   src="/images/카운터.webp"
-                  alt="카운터"
+                  alt="강남 달토 카운터 안내데스크"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -721,7 +552,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '16/9' }}>
                 <img
                   src="/images/룸1.webp"
-                  alt="룸 1"
+                  alt="강남 달토 VIP 룸 1 프리미엄 인테리어"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -743,7 +574,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '16/9' }}>
                 <img
                   src="/images/룸3.webp"
-                  alt="룸 3"
+                  alt="강남 달토 룸 3 모던 인테리어"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -765,7 +596,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '16/9' }}>
                 <img
                   src="/images/룸4.webp"
-                  alt="룸 4"
+                  alt="강남 달토 룸 4 파티룸"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -787,7 +618,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '16/9' }}>
                 <img
                   src="/images/룸5.webp"
-                  alt="룸 5"
+                  alt="강남 달토 룸 5 럭셔리 공간"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -809,7 +640,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '16/9' }}>
                 <img
                   src="/images/룸6.webp"
-                  alt="룸 6"
+                  alt="강남 달토 룸 6 VIP 전용"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -831,7 +662,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '16/9' }}>
                 <img
                   src="/images/룸7.webp"
-                  alt="룸 7"
+                  alt="강남 달토 룸 7 모던 프라이빗"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -852,148 +683,130 @@ export default function HomePage() {
       </section>
 
       {/* How Section */}
-      <section className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="이용방법 안내">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-black to-black" />
         <div className="relative z-10 max-w-4xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-16 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
             이용방법
           </h2>
 
-          <div className="space-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Step 1 */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-black" style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)' }}>
-                1
-              </div>
-              <div className="flex-1">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
-                  달토에게 예약/문의
-                </h3>
-                <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-xl p-8 mb-4">
-                  <h4 className="text-xl font-bold mb-6" style={{ color: '#d4af37', textShadow: '0 0 30px rgba(212, 175, 55, 0.5)' }}>
-                    달토 신대표
-                  </h4>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div>
-                      <p className="text-sm text-gray-400 mb-2">📞 전화번호</p>
-                      <a href="tel:010-2303-3778" className="text-white hover:text-[#d4af37] transition-colors font-bold text-lg block">
-                        010-2303-3778
-                      </a>
-                      <p className="text-gray-500 text-sm mt-1">24시간 상담 가능</p>
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-400 mb-2">✈️ 텔레그램</p>
-                      <a href="https://t.me/hscompanyshs" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#d4af37] transition-colors font-bold block">
-                        @hscompanyshs
-                      </a>
-                      <p className="text-gray-500 text-sm mt-1">빠른 답변 보장</p>
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-400 mb-2">💬 카카오톡</p>
-                      <a href="https://open.kakao.com/o/tlsgustlra" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#d4af37] transition-colors font-bold block">
-                        tlsgustlra
-                      </a>
-                      <p className="text-gray-500 text-sm mt-1">가장 편한 방법</p>
-                    </div>
-                  </div>
+            <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-2xl p-6 md:p-8 hover:border-[#d4af37]/50 transition-all duration-500">
+              <div className="flex items-center gap-4 mb-5">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold text-black" style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)' }}>
+                  1
                 </div>
-                <a
-                  href="tel:010-2303-3778"
-                  className="inline-block py-3 px-8 text-black font-bold text-lg rounded-xl transition-all duration-300 hover:scale-105"
-                  style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)', border: '2px solid #d4af37' }}
-                >
-                  바로 예약하기
-                </a>
+                <h3 className="text-xl md:text-2xl font-bold text-white">달토에게 예약/문의</h3>
               </div>
-            </div>
-
-            {/* Step 2 */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-black" style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)' }}>
-                2
-              </div>
-              <div className="flex-1">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
-                  가게 방문
-                </h3>
-                <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-xl p-8 mb-4">
-                  <p className="text-xl font-semibold mb-3" style={{ color: '#d4af37' }}>📍 주소</p>
-                  <p className="text-white mb-4 text-lg font-semibold">서울시 강남구 역삼동 604-11번지</p>
-                  <div className="space-y-2 text-gray-300 mb-6">
-                    <p>🚇 강남역 10번 출구에서 도보 5분</p>
-                    <p>🚗 주차 발렛 서비스 제공</p>
-                    <p>🕐 영업시간: 저녁 6시 ~ 새벽 5시</p>
-                  </div>
-                  <a
-                    href="#directions"
-                    className="inline-block py-3 px-8 text-black font-bold text-lg rounded-xl transition-all duration-300 hover:scale-105"
-                    style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)', border: '2px solid #d4af37' }}
-                  >
-                    상세 길찾기
+              <div className="space-y-4 mb-5">
+                <div className="grid grid-cols-1 gap-3">
+                  <a href="tel:010-2303-3778" className="flex items-center gap-3 p-3 bg-black/30 rounded-lg hover:bg-black/50 transition-colors">
+                    <span className="text-lg">📞</span>
+                    <div>
+                      <p className="text-white font-bold">010-2303-3778</p>
+                      <p className="text-gray-500 text-xs">24시간 상담 가능</p>
+                    </div>
+                  </a>
+                  <a href="https://t.me/hscompanyshs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-black/30 rounded-lg hover:bg-black/50 transition-colors">
+                    <span className="text-lg">✈️</span>
+                    <div>
+                      <p className="text-white font-bold">텔레그램 @hscompanyshs</p>
+                      <p className="text-gray-500 text-xs">빠른 답변 보장</p>
+                    </div>
+                  </a>
+                  <a href="https://open.kakao.com/o/tlsgustlra" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-black/30 rounded-lg hover:bg-black/50 transition-colors">
+                    <span className="text-lg">💬</span>
+                    <div>
+                      <p className="text-white font-bold">카카오톡 tlsgustlra</p>
+                      <p className="text-gray-500 text-xs">가장 편한 방법</p>
+                    </div>
                   </a>
                 </div>
               </div>
+              <a
+                href="tel:010-2303-3778"
+                className="block w-full text-center py-3 px-6 text-black font-bold text-lg rounded-xl transition-all duration-300 hover:scale-105"
+                style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)', border: '2px solid #d4af37' }}
+              >
+                바로 예약하기
+              </a>
+            </div>
+
+            {/* Step 2 */}
+            <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-2xl p-6 md:p-8 hover:border-[#d4af37]/50 transition-all duration-500">
+              <div className="flex items-center gap-4 mb-5">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold text-black" style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)' }}>
+                  2
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-white">가게 방문</h3>
+              </div>
+              <div className="space-y-3 mb-5">
+                <p className="text-xl font-semibold" style={{ color: '#d4af37' }}>📍 주소</p>
+                <p className="text-white text-lg font-semibold">서울시 강남구 역삼동 604-11번지</p>
+                <div className="space-y-2 text-gray-300">
+                  <p>🚇 강남역 10번 출구에서 도보 5분</p>
+                  <p>🚗 주차 발렛 서비스 제공</p>
+                  <p>🕐 영업시간: 저녁 6시 ~ 새벽 5시</p>
+                </div>
+              </div>
+              <a
+                href="#directions"
+                className="block w-full text-center py-3 px-6 text-black font-bold text-lg rounded-xl transition-all duration-300 hover:scale-105"
+                style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)', border: '2px solid #d4af37' }}
+              >
+                상세 길찾기
+              </a>
             </div>
 
             {/* Step 3 */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-black" style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)' }}>
-                3
+            <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-2xl p-6 md:p-8 hover:border-[#d4af37]/50 transition-all duration-500">
+              <div className="flex items-center gap-4 mb-5">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold text-black" style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)' }}>
+                  3
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-white">초이스 타임</h3>
               </div>
-              <div className="flex-1">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
-                  초이스 타임
-                </h3>
-                <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-xl p-8">
-                  <p className="text-xl text-gray-300 leading-relaxed mb-4">
-                    매력적인 여성 파트너들과의 만남이 시작됩니다.
-                    편안한 분위기에서 자유롭게 대화를 나누시며 마음에 드는 파트너를 선택하실 수 있습니다.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                    <div className="p-4 bg-black/30 rounded-lg">
-                      <p className="font-semibold mb-2" style={{ color: '#d4af37' }}>✨ 부담 없는 분위기</p>
-                      <p className="text-gray-400 text-sm">자연스럽고 편안한 초이스 진행</p>
-                    </div>
-                    <div className="p-4 bg-black/30 rounded-lg">
-                      <p className="font-semibold mb-2" style={{ color: '#d4af37' }}>👔 신대표 직접 매칭</p>
-                      <p className="text-gray-400 text-sm">최적의 파트너 추천</p>
-                    </div>
-                  </div>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                매력적인 여성 파트너들과의 만남이 시작됩니다.
+                편안한 분위기에서 자유롭게 대화를 나누시며 마음에 드는 파트너를 선택하실 수 있습니다.
+              </p>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="p-3 bg-black/30 rounded-lg">
+                  <p className="font-semibold mb-1 text-sm" style={{ color: '#d4af37' }}>✨ 부담 없는 분위기</p>
+                  <p className="text-gray-400 text-xs">자연스럽고 편안한 초이스 진행</p>
+                </div>
+                <div className="p-3 bg-black/30 rounded-lg">
+                  <p className="font-semibold mb-1 text-sm" style={{ color: '#d4af37' }}>👔 신대표 직접 매칭</p>
+                  <p className="text-gray-400 text-xs">최적의 파트너 추천</p>
                 </div>
               </div>
             </div>
 
             {/* Step 4 */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-black" style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)' }}>
-                4
+            <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-2xl p-6 md:p-8 hover:border-[#d4af37]/50 transition-all duration-500">
+              <div className="flex items-center gap-4 mb-5">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold text-black" style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)' }}>
+                  4
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-white">즐거운 시간 보내기</h3>
               </div>
-              <div className="flex-1">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
-                  즐거운 시간 보내기
-                </h3>
-                <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-xl p-8">
-                  <p className="text-xl text-gray-300 leading-relaxed mb-4">
-                    프라이빗한 공간에서 음악과 함께 특별한 시간을 즐기세요.
-                    프리미엄 서비스와 고급 인테리어가 어우러진 최상의 경험을 제공합니다.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                    <div className="p-4 bg-black/30 rounded-lg text-center">
-                      <p className="text-3xl mb-2">🎵</p>
-                      <p className="font-semibold mb-1" style={{ color: '#d4af37' }}>최신 음향</p>
-                      <p className="text-gray-400 text-sm">프리미엄 사운드</p>
-                    </div>
-                    <div className="p-4 bg-black/30 rounded-lg text-center">
-                      <p className="text-3xl mb-2">💡</p>
-                      <p className="font-semibold mb-1" style={{ color: '#d4af37' }}>무드 조명</p>
-                      <p className="text-gray-400 text-sm">완벽한 분위기</p>
-                    </div>
-                    <div className="p-4 bg-black/30 rounded-lg text-center">
-                      <p className="text-3xl mb-2">🥂</p>
-                      <p className="font-semibold mb-1" style={{ color: '#d4af37' }}>프리미엄 주류</p>
-                      <p className="text-gray-400 text-sm">다양한 메뉴</p>
-                    </div>
-                  </div>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                프라이빗한 공간에서 음악과 함께 특별한 시간을 즐기세요.
+                프리미엄 서비스와 고급 인테리어가 어우러진 최상의 경험을 제공합니다.
+              </p>
+              <div className="grid grid-cols-3 gap-3">
+                <div className="p-3 bg-black/30 rounded-lg text-center">
+                  <p className="text-2xl mb-1">🎵</p>
+                  <p className="font-semibold text-xs" style={{ color: '#d4af37' }}>최신 음향</p>
+                </div>
+                <div className="p-3 bg-black/30 rounded-lg text-center">
+                  <p className="text-2xl mb-1">💡</p>
+                  <p className="font-semibold text-xs" style={{ color: '#d4af37' }}>무드 조명</p>
+                </div>
+                <div className="p-3 bg-black/30 rounded-lg text-center">
+                  <p className="text-2xl mb-1">🥂</p>
+                  <p className="font-semibold text-xs" style={{ color: '#d4af37' }}>프리미엄 주류</p>
                 </div>
               </div>
             </div>
@@ -1002,7 +815,7 @@ export default function HomePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="자주 묻는 질문">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-black to-black" />
         <div className="relative z-10 max-w-4xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-16 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -1024,10 +837,10 @@ export default function HomePage() {
                   <strong>기본 요금 구조:</strong>
                 </p>
                 <ul className="text-gray-400 space-y-2 ml-4 mb-4">
-                  <li>• 2인 기준: 2시간 24만원~ (1인당 12만원)</li>
-                  <li>• 3인 기준: 2시간 33만원~ (1인당 11만원)</li>
-                  <li>• 4인 이상: 인원별 할인 적용</li>
+                  <li>• 강남 최저가 보장</li>
+                  <li>• 인원별 맞춤 견적 안내</li>
                   <li>• 주류 및 안주 포함</li>
+                  <li>• 정확한 가격은 유선문의 (010-2303-3778)</li>
                 </ul>
                 <p className="text-gray-400 leading-relaxed mb-4">
                   예약 시 정확한 인원과 이용 시간을 말씀해주시면
@@ -1249,7 +1062,7 @@ export default function HomePage() {
       </section>
 
       {/* 1. Price Section - 가격표 */}
-      <section id="price" className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section id="price" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="가격표">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-black to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -1269,8 +1082,8 @@ export default function HomePage() {
                 <p className="text-gray-400">기본 2시간</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl font-bold text-white mb-2">240,000원</p>
-                <p className="text-sm text-gray-400">1인당 120,000원</p>
+                <p className="text-3xl font-bold mb-2" style={{ color: '#d4af37' }}>최저가 유선문의</p>
+                <a href="tel:010-2303-3778" className="text-sm text-gray-300 hover:text-[#d4af37] transition-colors">📞 010-2303-3778</a>
               </div>
               <ul className="mt-6 space-y-2 text-gray-300">
                 <li className="flex items-center gap-2">
@@ -1297,8 +1110,8 @@ export default function HomePage() {
                 <p className="text-gray-400">기본 2시간</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl font-bold text-white mb-2">330,000원</p>
-                <p className="text-sm text-gray-400">1인당 110,000원</p>
+                <p className="text-3xl font-bold mb-2" style={{ color: '#d4af37' }}>최저가 유선문의</p>
+                <a href="tel:010-2303-3778" className="text-sm text-gray-300 hover:text-[#d4af37] transition-colors">📞 010-2303-3778</a>
               </div>
               <ul className="mt-6 space-y-2 text-gray-300">
                 <li className="flex items-center gap-2">
@@ -1320,8 +1133,8 @@ export default function HomePage() {
                 <p className="text-gray-400">기본 2시간</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl font-bold text-white mb-2">1인당 100,000원~</p>
-                <p className="text-sm text-gray-400">인원에 따라 할인</p>
+                <p className="text-3xl font-bold mb-2" style={{ color: '#d4af37' }}>최저가 유선문의</p>
+                <a href="tel:010-2303-3778" className="text-sm text-gray-300 hover:text-[#d4af37] transition-colors">📞 010-2303-3778</a>
               </div>
               <ul className="mt-6 space-y-2 text-gray-300">
                 <li className="flex items-center gap-2">
@@ -1342,15 +1155,15 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div>
                 <p className="text-xl font-bold text-white mb-2">30분 연장</p>
-                <p className="text-3xl font-bold" style={{ color: '#d4af37' }}>50,000원</p>
+                <p className="text-2xl font-bold" style={{ color: '#d4af37' }}>유선문의</p>
               </div>
               <div>
                 <p className="text-xl font-bold text-white mb-2">1시간 연장</p>
-                <p className="text-3xl font-bold" style={{ color: '#d4af37' }}>90,000원</p>
+                <p className="text-2xl font-bold" style={{ color: '#d4af37' }}>유선문의</p>
               </div>
               <div>
                 <p className="text-xl font-bold text-white mb-2">올나잇 패키지</p>
-                <p className="text-3xl font-bold" style={{ color: '#d4af37' }}>별도 문의</p>
+                <p className="text-2xl font-bold" style={{ color: '#d4af37' }}>유선문의</p>
               </div>
             </div>
           </div>
@@ -1363,19 +1176,19 @@ export default function HomePage() {
                 <ul className="space-y-3 text-gray-300">
                   <li className="flex justify-between">
                     <span>소주/맥주 추가</span>
-                    <span className="font-bold text-white">10,000원</span>
+                    <span className="font-bold" style={{ color: '#d4af37' }}>유선문의</span>
                   </li>
                   <li className="flex justify-between">
                     <span>양주 (기본)</span>
-                    <span className="font-bold text-white">150,000원</span>
+                    <span className="font-bold" style={{ color: '#d4af37' }}>유선문의</span>
                   </li>
                   <li className="flex justify-between">
                     <span>프리미엄 양주</span>
-                    <span className="font-bold text-white">200,000원~</span>
+                    <span className="font-bold" style={{ color: '#d4af37' }}>유선문의</span>
                   </li>
                   <li className="flex justify-between">
                     <span>샴페인</span>
-                    <span className="font-bold text-white">250,000원~</span>
+                    <span className="font-bold" style={{ color: '#d4af37' }}>유선문의</span>
                   </li>
                 </ul>
               </div>
@@ -1384,19 +1197,19 @@ export default function HomePage() {
                 <ul className="space-y-3 text-gray-300">
                   <li className="flex justify-between">
                     <span>과일 플레이트</span>
-                    <span className="font-bold text-white">50,000원</span>
+                    <span className="font-bold" style={{ color: '#d4af37' }}>유선문의</span>
                   </li>
                   <li className="flex justify-between">
                     <span>디저트 세트</span>
-                    <span className="font-bold text-white">30,000원</span>
+                    <span className="font-bold" style={{ color: '#d4af37' }}>유선문의</span>
                   </li>
                   <li className="flex justify-between">
                     <span>치킨/피자</span>
-                    <span className="font-bold text-white">30,000원</span>
+                    <span className="font-bold" style={{ color: '#d4af37' }}>유선문의</span>
                   </li>
                   <li className="flex justify-between">
                     <span>특별 요리</span>
-                    <span className="font-bold text-white">별도 문의</span>
+                    <span className="font-bold" style={{ color: '#d4af37' }}>유선문의</span>
                   </li>
                 </ul>
               </div>
@@ -1414,7 +1227,7 @@ export default function HomePage() {
       </section>
 
       {/* 2. Choice System Detail - 초이스 시스템 상세 */}
-      <section id="choice-system" className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section id="choice-system" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="초이스 시스템 안내">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-purple-950/20 to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -1549,7 +1362,7 @@ export default function HomePage() {
       </section>
 
       {/* 3. Customer Reviews - 고객 후기 */}
-      <section id="reviews" className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section id="reviews" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="고객 후기">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-black to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -1655,7 +1468,7 @@ export default function HomePage() {
       </section>
 
       {/* 4. Tips & Precautions - 이용 팁 & 주의사항 */}
-      <section id="tips" className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section id="tips" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="이용 팁과 주의사항">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-purple-950/20 to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -1802,7 +1615,7 @@ export default function HomePage() {
       </section>
 
       {/* 5. VIP Service - VIP 서비스 안내 */}
-      <section id="vip" className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section id="vip" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="VIP 프리미엄 서비스">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-black to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -1955,7 +1768,7 @@ export default function HomePage() {
       </section>
 
       {/* 6. Group Reservation - 단체 예약 가이드 */}
-      <section id="group" className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section id="group" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="단체 예약 안내">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-purple-950/20 to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -1974,7 +1787,7 @@ export default function HomePage() {
               <p className="text-gray-300 leading-relaxed mb-4">
                 편안한 분위기에서 친구들과 즐거운 시간
               </p>
-              <p className="text-3xl font-bold" style={{ color: '#d4af37' }}>1인 100,000원~</p>
+              <p className="text-2xl font-bold" style={{ color: '#d4af37' }}>최저가 유선문의</p>
             </div>
 
             <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border-2 rounded-2xl p-8 text-center" style={{ borderColor: '#d4af37' }}>
@@ -1983,8 +1796,8 @@ export default function HomePage() {
               <p className="text-gray-300 leading-relaxed mb-4">
                 회사 회식, 팀 빌딩에 최적
               </p>
-              <p className="text-3xl font-bold" style={{ color: '#d4af37' }}>1인 90,000원~</p>
-              <p className="text-sm text-gray-400 mt-2">10% 단체 할인</p>
+              <p className="text-2xl font-bold" style={{ color: '#d4af37' }}>최저가 유선문의</p>
+              <p className="text-sm text-gray-400 mt-2">단체 할인 적용</p>
             </div>
 
             <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/30 rounded-2xl p-8 text-center">
@@ -1993,8 +1806,8 @@ export default function HomePage() {
               <p className="text-gray-300 leading-relaxed mb-4">
                 동창회, 동호회 모임 전용
               </p>
-              <p className="text-3xl font-bold" style={{ color: '#d4af37' }}>별도 견적</p>
-              <p className="text-sm text-gray-400 mt-2">최대 15% 할인</p>
+              <p className="text-2xl font-bold" style={{ color: '#d4af37' }}>최저가 유선문의</p>
+              <p className="text-sm text-gray-400 mt-2">최대 할인 적용</p>
             </div>
           </div>
 
@@ -2084,7 +1897,7 @@ export default function HomePage() {
       </section>
 
       {/* 7. Area Info - 강남 지역 정보 */}
-      <section id="area" className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section id="area" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="강남 지역 정보">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-black to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -2186,7 +1999,7 @@ export default function HomePage() {
       </section>
 
       {/* 8. Events & Promotions - 이벤트 & 프로모션 */}
-      <section id="events" className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section id="events" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="이벤트 및 특별 혜택">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-purple-950/20 to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -2302,7 +2115,7 @@ export default function HomePage() {
       </section>
 
       {/* Directions Section */}
-      <section id="directions" className="relative py-24 md:py-32 px-4 overflow-hidden">
+      <section id="directions" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="오시는 길 안내">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-black to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
@@ -2319,7 +2132,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '4/3' }}>
                 <img
                   src="/images/간판1.webp"
-                  alt="강남 달리는토끼 외관 야경"
+                  alt="강남 달토 달리는토끼 외관 간판 야경"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                   draggable={false}
@@ -2336,7 +2149,7 @@ export default function HomePage() {
               <div className="relative" style={{ aspectRatio: '4/3' }}>
                 <img
                   src="/images/입구.webp"
-                  alt="강남 달리는토끼 입구"
+                  alt="강남 달토 달리는토끼 프리미엄 입구"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                   draggable={false}
@@ -2443,7 +2256,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative py-20 px-4 bg-gradient-to-t from-black via-purple-950/10 to-black">
+      <section id="contact" className="relative py-20 px-4 bg-gradient-to-t from-black via-purple-950/10 to-black" aria-label="문의 및 예약">
         <div className="max-w-6xl mx-auto">
           <div className="w-full h-px bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mb-8" />
 
@@ -2475,7 +2288,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             {/* Contact Info */}
-            <div className="bg-black/60 p-8 rounded-3xl border-2 border-[#d4af37]/30">
+            <address className="bg-black/60 p-8 rounded-3xl border-2 border-[#d4af37]/30 not-italic">
               <div className="space-y-6">
                 <div
                   className="text-2xl font-bold mb-6 text-center"
@@ -2531,13 +2344,13 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </address>
 
             {/* Image */}
             <div className="group relative overflow-hidden rounded-3xl border-2 border-[#d4af37]/30 hover:border-[#d4af37]/60 transition-all duration-500">
               <img
                 src="/images/agassi.webp"
-                alt="프리미엄 서비스 이미지"
+                alt="강남 달토 프리미엄 매니저 서비스"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
                 draggable={false}
@@ -2585,9 +2398,35 @@ export default function HomePage() {
       </div>
 
       {/* Footer */}
-      <footer className="relative py-8 px-4 bg-black border-t border-[#d4af37]/20">
-        <div className="max-w-7xl mx-auto text-center text-gray-500 text-sm">
-          <p>&copy; 2025 강남 달토. All rights reserved.</p>
+      <footer className="relative py-12 px-4 bg-black border-t border-[#d4af37]/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-sm">
+            <div>
+              <h3 className="font-bold text-white mb-3" style={{ color: '#d4af37' }}>강남 달토 런닝래빗</h3>
+              <address className="not-italic text-gray-400 space-y-1">
+                <p>서울시 강남구 역삼동 604-11번지</p>
+                <p>강남역 10번 출구 도보 5분</p>
+              </address>
+            </div>
+            <div>
+              <h3 className="font-bold text-white mb-3" style={{ color: '#d4af37' }}>연락처</h3>
+              <div className="text-gray-400 space-y-1">
+                <p>전화: <a href="tel:010-2303-3778" className="hover:text-[#d4af37] transition-colors">010-2303-3778</a></p>
+                <p>텔레그램: <a href="https://t.me/hscompanyshs" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">@hscompanyshs</a></p>
+                <p>카카오톡: <a href="https://open.kakao.com/o/tlsgustlra" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4af37] transition-colors">tlsgustlra</a></p>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-bold text-white mb-3" style={{ color: '#d4af37' }}>영업시간</h3>
+              <div className="text-gray-400 space-y-1">
+                <p>매일 저녁 6시 ~ 새벽 5시</p>
+                <p>연중무휴 / 24시간 예약 상담</p>
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 pt-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 강남 달토 런닝래빗. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </main>

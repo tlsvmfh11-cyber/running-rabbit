@@ -1,8 +1,9 @@
 User-agent: *
 Allow: /
-Allow: /_next/
-Allow: /_next/static/
-Allow: /static/
-Allow: /api/
+Disallow: /api/
+Disallow: /_next/data/
+
+User-agent: Yeti
+Allow: /
 
 Sitemap: https://daltorunningrabbit.com/sitemap.xml
