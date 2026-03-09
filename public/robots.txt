@@ -1,9 +1,19 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /_next/static/
 Disallow: /_next/data/
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
 
 User-agent: Yeti
 Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
 
 Sitemap: https://daltorunningrabbit.com/sitemap.xml
