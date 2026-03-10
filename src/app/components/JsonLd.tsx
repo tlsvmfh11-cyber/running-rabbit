@@ -427,6 +427,7 @@ export default function JsonLd() {
     "@type": "Event",
     "name": "강남 달토 2026년 3월 특별 이벤트",
     "description": "2026년 봄 시즌 특별 프로모션 - 첫 방문 고객 웰컴 서비스, 생일 이벤트, 단골 VIP 혜택",
+    "image": "https://daltorunningrabbit.com/images/간판1.webp",
     "startDate": "2026-03-01",
     "endDate": "2026-03-31",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
@@ -445,8 +446,14 @@ export default function JsonLd() {
     "organizer": {
       "@id": "https://daltorunningrabbit.com/#business"
     },
+    "performer": {
+      "@type": "Organization",
+      "name": "달리는토끼 런닝래빗",
+      "url": "https://daltorunningrabbit.com"
+    },
     "offers": {
       "@type": "Offer",
+      "url": "https://daltorunningrabbit.com",
       "price": "0",
       "priceCurrency": "KRW",
       "availability": "https://schema.org/InStock",
