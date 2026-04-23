@@ -2,11 +2,11 @@ export default function HomePage() {
   return (
     <>
 
-      <main className="min-w-full bg-black text-white" itemScope itemType="https://schema.org/WebPage">
+      <main className="min-w-full bg-black text-white">
         {/* Update Date Display - 2026년 4월 최신 */}
         <div className="bg-gradient-to-r from-purple-950/30 to-black/30 py-2 text-center border-b border-[#d4af37]/20">
           <p className="text-sm text-gray-400">
-            <span style={{ color: '#d4af37' }}>2026년 최신 업데이트</span> | 강남 하이퍼블릭 1위 달토 런닝래빗
+            <span style={{ color: '#d4af37' }}>2026년 최신 업데이트</span> | 달토 런닝래빗
             <time dateTime="2026-04-01" className="ml-2">2026.04.01</time>
           </p>
         </div>
@@ -31,7 +31,7 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <img
             src="/images/title.webp"
-            alt="강남 달토 런닝래빗 프리미엄 하이퍼블릭 가라오케 - 강남역 도보 5분, 11년 전통 강남 하이퍼블릭 1위"
+            alt="강남 달토 런닝래빗 프리미엄 가라오케 외관"
             className="w-full h-full object-cover"
             width={1920}
             height={1080}
@@ -220,7 +220,7 @@ export default function HomePage() {
           </h3>
 
           <p className="text-lg text-center text-gray-400 mb-16 max-w-3xl mx-auto leading-relaxed">
-            신대표는 11년간 강남 유흥업계에서 쌓아온 노하우와 신뢰를 바탕으로
+            신대표는 11년간 강남에서 쌓아온 노하우와 신뢰를 바탕으로
             고객님들께 최상의 경험을 제공하기 위해 끊임없이 노력합니다.
             24시간 직접 응대하며 예약부터 퇴실까지 모든 과정을 책임지고 관리합니다.
           </p>
@@ -2336,8 +2336,8 @@ export default function HomePage() {
               <h3 className="text-xl font-bold text-white mb-3">누적 리뷰 200건 돌파</h3>
               <p className="text-gray-400 leading-relaxed">
                 강남 달토 런닝래빗이 누적 리뷰 243건, 평균 평점 4.9점을 달성했습니다.
-                고객 여러분의 성원에 감사드리며, 앞으로도 강남 하이퍼블릭 1위의 자리를
-                지키기 위해 최선을 다하겠습니다.
+                고객 여러분의 성원에 감사드리며, 앞으로도 최고의 서비스를
+                제공하기 위해 최선을 다하겠습니다.
               </p>
             </article>
 
@@ -2669,8 +2669,7 @@ export default function HomePage() {
           </div>
           <div className="border-t border-gray-800 pt-6 text-center text-gray-500 text-sm">
             <p>&copy; 2015-2026 강남 달토 런닝래빗 (달리는토끼). All rights reserved.</p>
-            <p className="mt-1">서울시 강남구 역삼동 604-11 | 강남 하이퍼블릭 1위 | 100% 정찰제 | 11년 전통 프리미엄 가라오케</p>
-            <p className="mt-1 text-gray-600">강남 달토 · 강남 하이퍼블릭 · 달리는토끼 · 런닝래빗 · 강남 가라오케 · 강남역 하이퍼블릭 · 강남 접대 · 강남 회식 · 강남 VIP</p>
+            <p className="mt-1">서울시 강남구 역삼동 604-11</p>
           </div>
         </div>
       </footer>

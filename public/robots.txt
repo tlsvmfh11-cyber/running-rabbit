@@ -4,22 +4,17 @@ Disallow: /api/
 Disallow: /_next/static/
 Disallow: /_next/data/
 Disallow: /404
-Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&fbclid&gclid /
 
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Yeti
 Allow: /
-Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Daumoa
 Allow: /
-Crawl-delay: 1
 
 Sitemap: https://daltorunningrabbit.com/sitemap.xml
