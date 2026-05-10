@@ -3,11 +3,11 @@ export default function HomePage() {
     <>
 
       <main className="min-w-full bg-black text-white">
-        {/* Update Date Display - 2026년 4월 최신 */}
+        {/* Update Date Display - 2026년 5월 최신 */}
         <div className="bg-gradient-to-r from-purple-950/30 to-black/30 py-2 text-center border-b border-[#d4af37]/20">
           <p className="text-sm text-gray-400">
             <span style={{ color: '#d4af37' }}>2026년 최신 업데이트</span> | 달토 런닝래빗
-            <time dateTime="2026-04-01" className="ml-2">2026.04.01</time>
+            <time dateTime="2026-05-10" className="ml-2">2026.05.10</time>
           </p>
         </div>
 
@@ -1074,7 +1074,7 @@ export default function HomePage() {
           <p className="text-xl text-center text-gray-300 mb-16 max-w-3xl mx-auto leading-relaxed">
             강남 달토 달리는토끼 런닝래빗은 <span className="font-bold" style={{ color: '#d4af37' }}>100% 정찰제</span>로 운영됩니다.
             숨겨진 비용이 없으며, 예약 시 정확한 금액을 안내해드립니다.
-            <br /><span className="text-sm text-gray-500">(2026년 4월 기준 최신 가격)</span>
+            <br /><span className="text-sm text-gray-500">(2026년 5월 기준 최신 가격)</span>
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -1374,7 +1374,7 @@ export default function HomePage() {
 
           <p className="text-xl text-center text-gray-300 mb-16 max-w-3xl mx-auto leading-relaxed">
             실제로 강남 달토 런닝래빗을 이용하신 고객님들의 <span className="font-bold" style={{ color: '#d4af37' }}>2026년 최신 솔직 후기</span>를 확인해보세요.
-            평균 만족도 <strong style={{ color: '#d4af37' }}>4.9/5.0</strong> (258명 평가 기준, 2026년 4월 업데이트)
+            평균 만족도 <strong style={{ color: '#d4af37' }}>4.9/5.0</strong> (270명 평가 기준, 2026년 5월 업데이트)
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -1514,7 +1514,7 @@ export default function HomePage() {
                     <span key={star} className="text-2xl" style={{ color: '#d4af37' }}>★</span>
                   ))}
                 </div>
-                <time dateTime="2026-04-01" className="text-sm text-gray-500">2026.04.01</time>
+                <time dateTime="2026-05-05" className="text-sm text-gray-500">2026.05.05</time>
               </div>
               <p className="text-gray-300 leading-relaxed mb-6">
                 "10명 단체 회식으로 방문했는데 <strong className="text-white">룸 연결해서 넓게</strong> 쓸 수 있었어요.
@@ -1533,14 +1533,14 @@ export default function HomePage() {
           </div>
 
           <div className="bg-gradient-to-br from-purple-950/30 to-black/30 border border-[#d4af37]/20 rounded-2xl p-10">
-            <h3 className="text-3xl font-bold mb-8 text-center" style={{ color: '#d4af37' }}>2026년 4월 기준 만족도 통계</h3>
+            <h3 className="text-3xl font-bold mb-8 text-center" style={{ color: '#d4af37' }}>2026년 5월 기준 만족도 통계</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div>
                 <p className="text-5xl font-bold mb-2" style={{ color: '#d4af37' }}>4.9</p>
                 <p className="text-gray-400">평균 평점</p>
               </div>
               <div>
-                <p className="text-5xl font-bold mb-2" style={{ color: '#d4af37' }}>258</p>
+                <p className="text-5xl font-bold mb-2" style={{ color: '#d4af37' }}>270</p>
                 <p className="text-gray-400">총 리뷰 수</p>
               </div>
               <div>
@@ -2096,7 +2096,7 @@ export default function HomePage() {
           </h2>
 
           <p className="text-xl text-center text-gray-300 mb-16 max-w-3xl mx-auto leading-relaxed">
-            강남 달토만의 <span className="font-bold" style={{ color: '#d4af37' }}>2026년 4월 특별 이벤트와 프로모션</span>으로
+            강남 달토만의 <span className="font-bold" style={{ color: '#d4af37' }}>2026년 5월 가정의 달 특별 이벤트와 프로모션</span>으로
             더욱 즐거운 시간을 보내세요! 봄 시즌 한정 혜택을 놓치지 마세요.
           </p>
 
@@ -2305,7 +2305,7 @@ export default function HomePage() {
             <article className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-2xl p-8 hover:border-[#d4af37]/50 transition-all duration-500">
               <div className="flex items-center gap-3 mb-4">
                 <span className="px-3 py-1 rounded-full text-sm font-bold" style={{ background: '#d4af37', color: '#000' }}>NEW</span>
-                <time dateTime="2026-04-01" className="text-sm text-gray-500">2026.04.01</time>
+                <time dateTime="2026-05-10" className="text-sm text-gray-500">2026.05.10</time>
               </div>
               <h3 className="text-xl font-bold text-white mb-3">2026년 봄 시즌 리뉴얼 완료</h3>
               <p className="text-gray-400 leading-relaxed">
@@ -2318,11 +2318,11 @@ export default function HomePage() {
             <article className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-2xl p-8 hover:border-[#d4af37]/50 transition-all duration-500">
               <div className="flex items-center gap-3 mb-4">
                 <span className="px-3 py-1 rounded-full text-sm font-bold" style={{ background: '#d4af37', color: '#000' }}>EVENT</span>
-                <time dateTime="2026-04-01" className="text-sm text-gray-500">2026.04.01</time>
+                <time dateTime="2026-05-01" className="text-sm text-gray-500">2026.05.01</time>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">4월 특별 프로모션 진행 중</h3>
+              <h3 className="text-xl font-bold text-white mb-3">5월 가정의 달 특별 프로모션 진행 중</h3>
               <p className="text-gray-400 leading-relaxed">
-                2026년 4월 한 달간 첫 방문 고객 웰컴 서비스, 단체 예약 특별 할인,
+                2026년 5월 한 달간 첫 방문 고객 웰컴 서비스, 단체 예약 특별 할인,
                 생일 고객 케이크 + 샴페인 무료 제공 등 다양한 혜택을 준비했습니다.
                 자세한 내용은 신대표에게 문의해주세요.
               </p>
