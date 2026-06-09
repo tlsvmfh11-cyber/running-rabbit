@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://daltorunningrabbit.com"),
   title: "강남 달토 가격·후기·시스템 총정리",
   description:
-    "강남 달토 런닝래빗 가격표, 실제 후기 270건, 초이스 시스템과 VIP룸 사진까지 한눈에. 강남역 도보 5분, 11년 운영 프리미엄 가라오케. 정찰제로 추가요금 걱정 없이 방문 가능합니다.",
+    "강남 달토 런닝래빗 가격표, 실제 후기 283건, 초이스 시스템과 VIP룸 사진까지 한눈에. 강남역 도보 5분, 11년 운영 프리미엄 가라오케. 정찰제로 추가요금 걱정 없이 방문 가능합니다.",
   authors: [{ name: "강남 달토 런닝래빗" }],
   creator: "강남 달토 런닝래빗",
   publisher: "강남 달토 런닝래빗",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "강남 달토 가격·후기·시스템 총정리",
     description:
-      "가격표·실제 후기 270건·초이스 시스템 한눈에 정리. 강남역 도보 5분, 11년 운영 프리미엄 가라오케. 정찰제로 추가요금 걱정 없음.",
+      "가격표·실제 후기 283건·초이스 시스템 한눈에 정리. 강남역 도보 5분, 11년 운영 프리미엄 가라오케. 정찰제로 추가요금 걱정 없음.",
     type: "website",
     url: "https://daltorunningrabbit.com",
     siteName: "강남 달토 런닝래빗",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "강남 달토 가격·후기·시스템 총정리",
     description:
-      "강남 달토 가격표·후기 270건·시스템 한눈 정리. 강남역 도보 5분, 11년 운영, 정찰제.",
+      "강남 달토 가격표·후기 283건·시스템 한눈 정리. 강남역 도보 5분, 11년 운영, 정찰제.",
     images: ["/images/간판1.webp"],
   },
   other: {
