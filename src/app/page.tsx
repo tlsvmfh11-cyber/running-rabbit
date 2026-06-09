@@ -18,7 +18,7 @@ export default function HomePage() {
             <a href="#rooms" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">룸 안내</a>
             <a href="#price" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">가격표</a>
             <a href="#choice-system" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">초이스</a>
-            <a href="#reviews" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">후기</a>
+            <a href="#reviews" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">이용안내</a>
             <a href="#vip" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">VIP</a>
             <a href="#directions" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">오시는 길</a>
             <a href="#contact" className="text-gray-300 hover:text-[#d4af37] transition-colors font-semibold">문의</a>
@@ -51,7 +51,7 @@ export default function HomePage() {
           </h1>
 
           <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-12 text-white">
-            강남 하이퍼블릭 <span style={{ color: '#d4af37' }}>1위</span>
+강남 대표 <span style={{ color: '#d4af37' }}>하이퍼블릭</span>
           </h2>
 
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 max-w-4xl leading-relaxed">
@@ -64,7 +64,7 @@ export default function HomePage() {
             2015년부터 11년간 강남을 대표해온 프리미엄 하이퍼블릭 가라오케입니다.
             <a href="#price" className="transition-all duration-300" style={{ color: '#d4af37', fontWeight: 'bold' }}>투명한 정찰제 가격</a>, 최상급 시설, 완벽한 <a href="#choice-system" className="transition-all duration-300" style={{ color: '#d4af37', fontWeight: 'bold' }}>초이스 시스템</a>으로
             비즈니스 접대부터 친구 모임, <a href="#group" className="transition-all duration-300" style={{ color: '#d4af37', fontWeight: 'bold' }}>단체 회식</a>, 1인 방문까지 모든 상황에 완벽하게 대응합니다.
-            신대표가 24시간 직접 응대하며 <a href="#reviews" className="transition-all duration-300" style={{ color: '#d4af37', fontWeight: 'bold' }}>고객 만족도 1위</a>, 재방문율 92%를 기록하고 있습니다.
+            신대표가 24시간 직접 응대하며 예약부터 이용까지 모든 과정을 세심하게 관리합니다.
           </p>
 
           {/* CTA Button Group */}
@@ -121,8 +121,8 @@ export default function HomePage() {
               <p className="text-xl md:text-2xl leading-relaxed text-gray-300">
                 <span className="font-bold" style={{ color: '#d4af37', textShadow: '0 0 20px rgba(212, 175, 55, 0.3)' }}>강남 달토 달리는토끼 런닝래빗</span>은
                 2015년부터 강남 역삼동에서 <strong className="text-white">11년간</strong> 운영해온 강남 대표 하이퍼블릭 가라오케입니다.
-                최고급 시설과 프리미엄 서비스로 <strong className="text-white">연간 6,000팀 이상</strong>의 고객님들을 모시고 있으며,
-                2026년 현재까지 고객 만족도 평가에서 지속적으로 <strong className="text-white">강남 하이퍼블릭 1위</strong>를 기록하고 있습니다.
+                최고급 시설과 프리미엄 서비스로 다양한 고객님들을 모시고 있으며,
+                2015년 오픈 이래 강남 역삼동에서 변함없이 한자리를 지켜오고 있습니다.
               </p>
 
               <p className="text-lg md:text-xl leading-relaxed text-gray-400">
@@ -146,10 +146,9 @@ export default function HomePage() {
               </p>
 
               <p className="text-lg md:text-xl leading-relaxed text-gray-400">
-                강남 하이퍼블릭 가라오케 중에서도 가장 합리적인 가격대와 최상의 서비스 품질로
-                <strong className="text-white">재방문율 92%</strong>를 기록하고 있으며, 많은 고객님들께서
-                지인 추천을 통해 방문해주고 계십니다.
-                2026년에도 변함없이 강남 하이퍼블릭 최고의 자리를 지키고 있습니다.
+                강남 하이퍼블릭 가라오케 중에서도 합리적인 가격대와 안정적인 서비스 품질을 지향하며,
+                많은 고객님들께서 지인 추천을 통해 다시 찾아주고 계십니다.
+                2026년에도 변함없이 정직한 운영으로 강남을 지키고 있습니다.
               </p>
 
               <div className="pt-6 flex gap-4">
@@ -188,10 +187,10 @@ export default function HomePage() {
             </div>
 
             <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-2xl p-8 hover:border-[#d4af37]/50 transition-all duration-500">
-              <div className="text-4xl mb-4">🏆</div>
-              <h4 className="text-xl font-bold mb-3 text-white">강남 1위</h4>
+              <div className="text-4xl mb-4">💰</div>
+              <h4 className="text-xl font-bold mb-3 text-white">투명한 정찰제</h4>
               <p className="text-gray-400">
-                고객 만족도 1위를 기록한 검증된 프리미엄 서비스
+                숨은 비용 없는 100% 정찰제로 안심하고 이용하는 프리미엄 서비스
               </p>
             </div>
 
@@ -864,7 +863,7 @@ export default function HomePage() {
               </summary>
               <div className="mt-4 pt-4 border-t border-[#d4af37]/20">
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  <strong>네, 전혀 문제없습니다!</strong> 실제로 전체 방문 고객의 약 30%가 1인 방문이며,
+                  <strong>네, 전혀 문제없습니다!</strong> 혼자 방문하시는 분들도 많으며,
                   많은 분들이 혼자 편안하게 시간을 보내고 계십니다.
                 </p>
                 <p className="text-gray-400 leading-relaxed mb-4">
@@ -880,7 +879,7 @@ export default function HomePage() {
                   <li>• 개인 맞춤형 서비스 제공</li>
                   <li>• 부담 없는 편안한 분위기</li>
                   <li>• 합리적인 1인 요금제</li>
-                  <li>• 재방문율 높은 단골 고객 다수</li>
+                  <li>• 편하게 다시 찾는 단골 고객 다수</li>
                 </ul>
                 <p className="text-gray-400 leading-relaxed">
                   예약 시 1인 방문이라고 말씀해주시면
@@ -1056,6 +1055,42 @@ export default function HomePage() {
                 <p className="text-gray-400 leading-relaxed">
                   결제 및 영수증 관련 문의사항은 예약 시 또는 방문 시
                   신대표에게 말씀해주시면 상세히 안내해드립니다.
+                </p>
+              </div>
+            </details>
+
+            {/* FAQ 8 */}
+            <details className="group bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-xl p-6 hover:border-[#d4af37]/50 transition-all duration-300">
+              <summary className="flex items-center justify-between cursor-pointer list-none">
+                <span className="text-xl font-bold text-white">주차나 발렛 서비스가 있나요?</span>
+                <span className="text-[#d4af37] text-2xl group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-[#d4af37]/20">
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  네, 발렛 주차 서비스를 제공합니다. 강남역 10번 출구에서 도보 5분 거리에 위치해
+                  대중교통 이용도 편리하며, 차량으로 방문하시는 경우 발렛 서비스를 이용하실 수 있습니다.
+                </p>
+                <p className="text-gray-400 leading-relaxed">
+                  VIP 고객께는 픽업 서비스도 제공하고 있으니, 차량 이용이나 픽업이 필요하시면
+                  예약 시 신대표에게 미리 말씀해주시면 안내해드립니다.
+                </p>
+              </div>
+            </details>
+
+            {/* FAQ 9 */}
+            <details className="group bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/20 rounded-xl p-6 hover:border-[#d4af37]/50 transition-all duration-300">
+              <summary className="flex items-center justify-between cursor-pointer list-none">
+                <span className="text-xl font-bold text-white">단체 회식은 몇 명까지 가능한가요?</span>
+                <span className="text-[#d4af37] text-2xl group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className="mt-4 pt-4 border-t border-[#d4af37]/20">
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  2인 소규모 모임부터 20인 이상 대규모 단체까지 모두 가능합니다. 인원에 따라
+                  룸을 연결해 넓게 사용하실 수 있어 회사 회식이나 동창회 등 단체 모임에 적합합니다.
+                </p>
+                <p className="text-gray-400 leading-relaxed">
+                  단체 예약 시 법인카드 결제와 세금계산서 발행이 가능하며, 인원과 일정에 맞춰
+                  룸 배치와 견적을 사전에 안내해드립니다. 단체 방문은 미리 예약하시는 것을 권장합니다.
                 </p>
               </div>
             </details>
@@ -1364,192 +1399,69 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. Customer Reviews - 고객 후기 */}
-      <section id="reviews" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="고객 후기">
+      {/* 3. 이용 안내 & 신뢰 포인트 */}
+      <section id="reviews" className="relative py-24 md:py-32 px-4 overflow-hidden" aria-label="이용 안내 및 신뢰 포인트">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/20 via-black to-black" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center" style={{ color: '#d4af37', textShadow: '0 0 40px rgba(212, 175, 55, 0.6)' }}>
-            고객 후기
+            안심하고 방문하세요
           </h2>
 
           <p className="text-xl text-center text-gray-300 mb-16 max-w-3xl mx-auto leading-relaxed">
-            실제로 강남 달토 런닝래빗을 이용하신 고객님들의 <span className="font-bold" style={{ color: '#d4af37' }}>2026년 최신 솔직 후기</span>를 확인해보세요.
-            평균 만족도 <strong style={{ color: '#d4af37' }}>4.9/5.0</strong> (283명 평가 기준, 2026년 6월 업데이트)
+            강남 달토 런닝래빗이 오랜 기간 강남에서 자리를 지켜온 이유는 <span className="font-bold" style={{ color: '#d4af37' }}>정직한 운영과 투명한 가격</span> 때문입니다.
+            처음 방문하시는 분도 부담 없이 이용하실 수 있도록 아래 사항을 안내해드립니다.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            {/* Review 1 */}
-            <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/30 rounded-2xl p-8 hover:border-[#d4af37]/60 transition-all duration-300">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-1">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <span key={star} className="text-2xl" style={{ color: '#d4af37' }}>★</span>
-                  ))}
-                </div>
-                <time dateTime="2026-02-15" className="text-sm text-gray-500">2026.02.15</time>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                "처음 가보는 곳이라 긴장했는데 신대표님이 정말 친절하게 안내해주셔서 편안하게 즐겼습니다.
-                시설도 깔끔하고 분위기도 좋았어요. <strong className="text-white">강남 하이퍼블릭 중 최고</strong>입니다!"
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: '#d4af37' }}>
-                  <span className="text-black font-bold text-xl">김</span>
-                </div>
-                <div>
-                  <p className="font-bold text-white">김○○님</p>
-                  <p className="text-sm text-gray-400">30대 직장인 · 첫 방문</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Review 2 */}
-            <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/30 rounded-2xl p-8 hover:border-[#d4af37]/60 transition-all duration-300">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-1">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <span key={star} className="text-2xl" style={{ color: '#d4af37' }}>★</span>
-                  ))}
-                </div>
-                <time dateTime="2026-02-28" className="text-sm text-gray-500">2026.02.28</time>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                "회사 회식으로 방문했는데 모든 직원들이 만족했습니다.
-                가격도 합리적이고 서비스도 최고였어요. <strong className="text-white">비즈니스 접대용으로도 완벽</strong>합니다!"
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: '#d4af37' }}>
-                  <span className="text-black font-bold text-xl">이</span>
-                </div>
-                <div>
-                  <p className="font-bold text-white">이○○님</p>
-                  <p className="text-sm text-gray-400">40대 CEO · 5회 이상 방문</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Review 3 */}
-            <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/30 rounded-2xl p-8 hover:border-[#d4af37]/60 transition-all duration-300">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-1">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <span key={star} className="text-2xl" style={{ color: '#d4af37' }}>★</span>
-                  ))}
-                </div>
-                <time dateTime="2026-03-01" className="text-sm text-gray-500">2026.03.01</time>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                "혼자 방문했는데도 전혀 어색하지 않았어요.
-                1인 룸이 따로 있어서 편안하게 즐길 수 있었습니다. <strong className="text-white">정찰제라 가격 걱정 없이 안심</strong>!"
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: '#d4af37' }}>
-                  <span className="text-black font-bold text-xl">박</span>
-                </div>
-                <div>
-                  <p className="font-bold text-white">박○○님</p>
-                  <p className="text-sm text-gray-400">20대 회사원 · 1인 방문</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Additional Reviews - 2026 최신 */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {/* Review 4 */}
+            {/* 정찰제 */}
             <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/30 rounded-2xl p-8 hover:border-[#d4af37]/60 transition-all duration-300">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-1">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <span key={star} className="text-2xl" style={{ color: '#d4af37' }}>★</span>
-                  ))}
-                </div>
-                <time dateTime="2026-03-22" className="text-sm text-gray-500">2026.03.22</time>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                "강남 하이퍼블릭 여러 곳 다녀봤는데 달토가 시설, 서비스, 가격 <strong className="text-white">모든 면에서 압도적</strong>입니다.
-                신대표님 응대가 진짜 다릅니다. 단골 확정!"
+              <span className="text-5xl mb-4 block">💰</span>
+              <h3 className="text-2xl font-bold mb-4" style={{ color: '#d4af37' }}>100% 정찰제</h3>
+              <p className="text-gray-300 leading-relaxed">
+                숨은 비용 없이 예약 시 정확한 금액을 안내해드립니다. 인원과 이용 시간에 따른
+                견적을 신대표가 직접 설명드리며, 추가 요금은 사전에 투명하게 고지합니다.
               </p>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: '#d4af37' }}>
-                  <span className="text-black font-bold text-xl">최</span>
-                </div>
-                <div>
-                  <p className="font-bold text-white">최○○님</p>
-                  <p className="text-sm text-gray-400">30대 사업가 · 3회 방문</p>
-                </div>
-              </div>
             </div>
 
-            {/* Review 5 */}
+            {/* 정식 허가 업장 */}
             <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/30 rounded-2xl p-8 hover:border-[#d4af37]/60 transition-all duration-300">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-1">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <span key={star} className="text-2xl" style={{ color: '#d4af37' }}>★</span>
-                  ))}
-                </div>
-                <time dateTime="2026-03-28" className="text-sm text-gray-500">2026.03.28</time>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                "외국 바이어 접대로 방문했는데 <strong className="text-white">영어 가능한 매니저</strong>도 있고,
-                시설이 워낙 좋아서 바이어분들도 매우 만족하셨습니다. 최고의 접대 장소!"
+              <span className="text-5xl mb-4 block">✅</span>
+              <h3 className="text-2xl font-bold mb-4" style={{ color: '#d4af37' }}>정식 허가 운영</h3>
+              <p className="text-gray-300 leading-relaxed">
+                관계 법령에 따라 정식 허가된 1종 유흥주점으로 운영됩니다. 합법적이고 건전한
+                범위 내에서 서비스가 이루어지며, 모든 이용 내용은 예약 시 투명하게 안내해드립니다.
               </p>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: '#d4af37' }}>
-                  <span className="text-black font-bold text-xl">정</span>
-                </div>
-                <div>
-                  <p className="font-bold text-white">정○○님</p>
-                  <p className="text-sm text-gray-400">40대 무역업 · 외국인 접대</p>
-                </div>
-              </div>
             </div>
 
-            {/* Review 6 */}
+            {/* 24시간 직접 응대 */}
             <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-[#d4af37]/30 rounded-2xl p-8 hover:border-[#d4af37]/60 transition-all duration-300">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-1">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <span key={star} className="text-2xl" style={{ color: '#d4af37' }}>★</span>
-                  ))}
-                </div>
-                <time dateTime="2026-06-07" className="text-sm text-gray-500">2026.06.07</time>
-              </div>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                "여름 회식으로 10명 단체 방문했는데 <strong className="text-white">룸 연결해서 넓게</strong> 쓸 수 있었어요.
-                무더위에 시원한 룸에서 단체 할인까지, 법인카드 결제에 세금계산서도 완벽! 다음 회식도 여기!"
+              <span className="text-5xl mb-4 block">📞</span>
+              <h3 className="text-2xl font-bold mb-4" style={{ color: '#d4af37' }}>신대표 24시간 응대</h3>
+              <p className="text-gray-300 leading-relaxed">
+                대리인이 아닌 신대표가 직접 전화·카카오톡·텔레그램으로 24시간 상담합니다.
+                예약 변경이나 특별 요청도 유연하게 대응하며, 첫 방문도 친절하게 안내해드립니다.
               </p>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: '#d4af37' }}>
-                  <span className="text-black font-bold text-xl">한</span>
-                </div>
-                <div>
-                  <p className="font-bold text-white">한○○님</p>
-                  <p className="text-sm text-gray-400">30대 팀장 · 단체 회식</p>
-                </div>
-              </div>
             </div>
           </div>
 
           <div className="bg-gradient-to-br from-purple-950/30 to-black/30 border border-[#d4af37]/20 rounded-2xl p-10">
-            <h3 className="text-3xl font-bold mb-8 text-center" style={{ color: '#d4af37' }}>2026년 6월 기준 만족도 통계</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div>
-                <p className="text-5xl font-bold mb-2" style={{ color: '#d4af37' }}>4.9</p>
-                <p className="text-gray-400">평균 평점</p>
+            <h3 className="text-3xl font-bold mb-8 text-center" style={{ color: '#d4af37' }}>방문 전 확인 사항</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <div className="flex items-start gap-3">
+                <span className="text-xl" style={{ color: '#d4af37' }}>📍</span>
+                <p className="text-gray-300">서울시 강남구 역삼동 604-11번지 · 강남역 10번 출구 도보 5분</p>
               </div>
-              <div>
-                <p className="text-5xl font-bold mb-2" style={{ color: '#d4af37' }}>283</p>
-                <p className="text-gray-400">총 리뷰 수</p>
+              <div className="flex items-start gap-3">
+                <span className="text-xl" style={{ color: '#d4af37' }}>🕐</span>
+                <p className="text-gray-300">영업시간 저녁 6시 ~ 새벽 5시 · 예약 상담은 24시간 가능</p>
               </div>
-              <div>
-                <p className="text-5xl font-bold mb-2" style={{ color: '#d4af37' }}>92%</p>
-                <p className="text-gray-400">재방문율</p>
+              <div className="flex items-start gap-3">
+                <span className="text-xl" style={{ color: '#d4af37' }}>🚗</span>
+                <p className="text-gray-300">발렛 주차 서비스 제공 · VIP 고객 픽업 서비스 가능</p>
               </div>
-              <div>
-                <p className="text-5xl font-bold mb-2" style={{ color: '#d4af37' }}>98%</p>
-                <p className="text-gray-400">추천 의향</p>
+              <div className="flex items-start gap-3">
+                <span className="text-xl" style={{ color: '#d4af37' }}>👥</span>
+                <p className="text-gray-300">1인 방문부터 20인 이상 단체 회식까지 룸 배치 가능</p>
               </div>
             </div>
           </div>
@@ -2212,7 +2124,7 @@ export default function HomePage() {
           </h2>
 
           <p className="text-xl text-center text-gray-300 mb-16 max-w-3xl mx-auto leading-relaxed">
-            강남에 수많은 하이퍼블릭이 있지만, <span className="font-bold" style={{ color: '#d4af37' }}>달토가 11년간 1위를 지켜온 이유</span>가 있습니다.
+            강남에 수많은 하이퍼블릭이 있지만, <span className="font-bold" style={{ color: '#d4af37' }}>달토가 11년간 한자리를 지켜온 이유</span>가 있습니다.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -2230,7 +2142,7 @@ export default function HomePage() {
               <h3 className="text-xl font-bold mb-3 text-white">11년 전통의 검증된 신뢰</h3>
               <p className="text-gray-400 leading-relaxed">
                 2015년 오픈 이래 강남에서 11년간 한자리를 지켜온 대표 브랜드.
-                누적 6만팀 이상 방문, 재방문율 92%, 평점 4.9의 압도적인 고객 만족도.
+                오랜 기간 정직한 운영으로 쌓아온 검증된 경력과 안정적인 서비스.
               </p>
             </div>
 
@@ -2333,11 +2245,11 @@ export default function HomePage() {
                 <span className="px-3 py-1 rounded-full text-sm font-bold bg-white text-black">INFO</span>
                 <time dateTime="2026-02-15" className="text-sm text-gray-500">2026.02.15</time>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">누적 리뷰 200건 돌파</h3>
+              <h3 className="text-xl font-bold text-white mb-3">정찰제 가격 안내 상시 운영</h3>
               <p className="text-gray-400 leading-relaxed">
-                강남 달토 런닝래빗이 누적 리뷰 243건, 평균 평점 4.9점을 달성했습니다.
-                고객 여러분의 성원에 감사드리며, 앞으로도 최고의 서비스를
-                제공하기 위해 최선을 다하겠습니다.
+                강남 달토 런닝래빗은 100% 정찰제로 운영됩니다. 인원과 이용 시간에 따른
+                정확한 견적을 예약 시 신대표가 직접 안내해드리며, 추가 비용은
+                사전에 투명하게 고지합니다.
               </p>
             </article>
 
